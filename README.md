@@ -5,3 +5,4 @@
 * Added Spring Bean Configuration file \src\main\resources\beans.xml. Selected the beans schema.
 * Declared a bean in it
 * Got a reference to the Bean using ClassPathXmlApplicationContext's getBean method 
+* bean tag attributes : lazy-init="true" init-method destroy-method

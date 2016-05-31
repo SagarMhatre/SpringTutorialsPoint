@@ -7,4 +7,8 @@
        <property name="message" value="Hello World!"/>
    </bean>
    
+   <bean id="helloWorldWithinitAndDestroy" class="in.mhatre.sagar.spring.tutorial.point.HelloWorld" lazy-init="true" init-method="init" destroy-method="destroy">
+       <property name="message" value="Hello World With init and destroy!"/>
+   </bean>
+   
 </beans>
