@@ -2,6 +2,15 @@ package in.mhatre.sagar.spring.tutorial.point;
 
 public class HelloWorld {
 	   private String message;
+	   private long creationTimestamp;
+	   
+	   public HelloWorld(){
+		   creationTimestamp = System.currentTimeMillis();
+	   }
+	   
+	   public void printCreationTimestamp(){
+		   System.out.println("CreationTime :" + creationTimestamp + " Your Message : " + message);
+	   }
 
 	   public void setMessage(String message){
 	      this.message  = message;

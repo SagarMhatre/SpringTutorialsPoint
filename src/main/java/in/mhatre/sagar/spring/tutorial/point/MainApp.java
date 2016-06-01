@@ -15,5 +15,13 @@ public static void main(String[] args) {
       HelloWorld helloWorldWithinitAndDestroy = context.getBean("helloWorldWithinitAndDestroy", HelloWorld.class);
       helloWorldWithinitAndDestroy.getMessage();
       
+      for(int i=0;i<3;i++){
+    	  HelloWorld singletonHelloWorld = context.getBean("singletonHelloWorld", HelloWorld.class);
+    	  singletonHelloWorld.printCreationTimestamp();
+    	  HelloWorld prototypeHelloWorld = context.getBean("prototypeHelloWorld", HelloWorld.class);
+    	  prototypeHelloWorld.printCreationTimestamp();    	  
+          
+      }
+      
    }
 }
