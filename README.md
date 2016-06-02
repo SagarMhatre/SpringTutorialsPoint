@@ -7,3 +7,4 @@
 * Got a reference to the Bean using ClassPathXmlApplicationContext's getBean method 
 * bean tag attributes : lazy-init="true" init-method destroy-method
 * bean tag attributes : scope="singleton/prototype"
+* Define a class that implements BeanPostProcessor, declare it's bean. ((AbstractApplicationContext) context).registerShutdownHook();

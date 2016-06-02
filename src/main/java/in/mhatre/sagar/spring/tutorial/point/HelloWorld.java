@@ -25,6 +25,6 @@ public class HelloWorld {
 	   }
 	   
 	   public void destroy(){
-		   System.out.println("init : Your Message : " + message); 
+		   System.out.println("destroy : Your Message : " + message); 
 	   }
 	}
